@@ -3,6 +3,10 @@ const _ = require('lodash')
 const fs = require('fs')
 const request = require('request')
 
+require('http').createServer().listen(process.env.PORT || 5000).on('request', function(req, res){
+    res.end('')
+})﻿
+
 const TOKEN = '415809423:AAGfoLLB6_yWwjArgCci9v8u8Nz2Y6jyyGs'
 
 const bot = new TelegramBot(TOKEN, {
